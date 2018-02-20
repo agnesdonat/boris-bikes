@@ -6,4 +6,8 @@ describe 'bike' do
   it 'checks if bike exists' do
     expect(bike).to be_an_instance_of(Bike)
   end
+
+  it 'checks if Bike instances respond to "working" method' do
+    expect(bike).to respond_to(:working?)
+  end
 end
